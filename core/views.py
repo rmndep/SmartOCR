@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from core.ocr.image_ocr import extract_text_from_image
 from core.ocr.text_cleaner import clean_text
+from core.ocr.pdf_ocr import extract_text_from_pdf
 
 def upload_file(request):
     if request.method == "POST":
@@ -16,6 +17,8 @@ def upload_file(request):
         if uploaded_file.name.lower().endswith(('.png', '.jpg', '.jpeg')):
             raw_text = extract_text_from_image(file_path)
             extracted_text = clean_text(raw_text)
+        if uploaded_file.name.lower().endswith('.pdf'):
+            extracted_text = extract_text_from_pdf(file_path)
 
         return render(request, 'result.html', {
             'file_name': uploaded_file.name,
