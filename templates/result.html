@@ -4,9 +4,14 @@
     <title>Result</title>
   </head>
   <body>
-    <h2>File Uploaded Successfully</h2>
+    <h2>OCR Result</h2>
 
-    <p><strong>File Name:</strong> {{ file_name }}</p>
-    <p><strong>Saved At:</strong> {{ file_path }}</p>
+    <p><strong>File:</strong> {{ file_name }}</p>
+
+    <h3>Extracted Text:</h3>
+    <pre>
+{{ extracted_text }}
+</pre
+    >
   </body>
 </html>
