@@ -58,25 +58,6 @@ Frontend	HTML, Bootstrap 5
 Version Control	Git
 IDE	VS Code
 
-
-🏗️ System Architecture
-User Upload
-   ↓
-File Validation
-   ↓
-OCR Layer
-   ├── Image OCR
-   ├── PDF Text Extraction
-   └── PDF Image OCR
-   ↓
-Text Cleaning
-   ↓
-(Optional) AI Summarization
-   ↓
-Export (TXT / JSON / PDF)
-   ↓
-Download / Display
-
 ⚙️ Installation & Setup
 1️⃣ Clone Repository
 git clone <your-repo-url>
