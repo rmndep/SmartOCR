@@ -57,6 +57,8 @@ AI Summarization	OpenAI API (optional)
 Frontend	HTML, Bootstrap 5
 Version Control	Git
 IDE	VS Code
+
+
 🏗️ System Architecture
 User Upload
    ↓
@@ -74,31 +76,6 @@ Text Cleaning
 Export (TXT / JSON / PDF)
    ↓
 Download / Display
-
-📁 Project Structure
-smartdoc-ocr/
-│
-├── core/
-│   ├── ocr/
-│   │   ├── image_ocr.py
-│   │   ├── pdf_ocr.py
-│   │   └── text_cleaner.py
-│   │
-│   ├── ai/
-│   │   └── summarizer.py
-│   │
-│   ├── export/
-│   │   └── exporter.py
-│   │
-│   └── views.py
-│
-├── templates/
-│   ├── upload.html
-│   └── result.html
-│
-├── media/
-├── manage.py
-└── README.md
 
 ⚙️ Installation & Setup
 1️⃣ Clone Repository
